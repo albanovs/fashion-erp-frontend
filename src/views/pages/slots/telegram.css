@@ -1,0 +1,9 @@
+.custom-table {
+  font-size: 12px;
+}
+
+@media (max-width: 640px) {
+  .custom-table {
+    font-size: 6px;
+  }
+}

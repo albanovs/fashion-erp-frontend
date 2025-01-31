@@ -1,0 +1,9 @@
+.table-manager {
+  font-size: 13px;
+}
+
+@media (max-width: 640px) {
+  .table-manager {
+    font-size: 6px;
+  }
+}

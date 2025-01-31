@@ -1,100 +1,130 @@
 import React from 'react'
 
 const Dashboard = React.lazy(() => import('./views/dashboard/Dashboard'))
-const Colors = React.lazy(() => import('./views/theme/colors/Colors'))
-const Typography = React.lazy(() => import('./views/theme/typography/Typography'))
+const InstagramSlot = React.lazy(() => import('./views/pages/slots/instagram'))
+const TelegramSlot = React.lazy(() => import('./views/pages/slots/telegram'))
 
-// Base
-const Accordion = React.lazy(() => import('./views/base/accordion/Accordion'))
-const Breadcrumbs = React.lazy(() => import('./views/base/breadcrumbs/Breadcrumbs'))
-const Cards = React.lazy(() => import('./views/base/cards/Cards'))
-const Carousels = React.lazy(() => import('./views/base/carousels/Carousels'))
-const Collapses = React.lazy(() => import('./views/base/collapses/Collapses'))
-const ListGroups = React.lazy(() => import('./views/base/list-groups/ListGroups'))
-const Navs = React.lazy(() => import('./views/base/navs/Navs'))
-const Paginations = React.lazy(() => import('./views/base/paginations/Paginations'))
-const Placeholders = React.lazy(() => import('./views/base/placeholders/Placeholders'))
-const Popovers = React.lazy(() => import('./views/base/popovers/Popovers'))
-const Progress = React.lazy(() => import('./views/base/progress/Progress'))
-const Spinners = React.lazy(() => import('./views/base/spinners/Spinners'))
-const Tables = React.lazy(() => import('./views/base/tables/Tables'))
-const Tooltips = React.lazy(() => import('./views/base/tooltips/Tooltips'))
+// Фулфимент
 
-// Buttons
-const Buttons = React.lazy(() => import('./views/buttons/buttons/Buttons'))
-const ButtonGroups = React.lazy(() => import('./views/buttons/button-groups/ButtonGroups'))
-const Dropdowns = React.lazy(() => import('./views/buttons/dropdowns/Dropdowns'))
+const FulfilmentPage = React.lazy(() => import('./views/pages/fulfilment/index'))
 
-//Forms
-const ChecksRadios = React.lazy(() => import('./views/forms/checks-radios/ChecksRadios'))
-const FloatingLabels = React.lazy(() => import('./views/forms/floating-labels/FloatingLabels'))
-const FormControl = React.lazy(() => import('./views/forms/form-control/FormControl'))
-const InputGroup = React.lazy(() => import('./views/forms/input-group/InputGroup'))
-const Layout = React.lazy(() => import('./views/forms/layout/Layout'))
-const Range = React.lazy(() => import('./views/forms/range/Range'))
-const Select = React.lazy(() => import('./views/forms/select/Select'))
-const Validation = React.lazy(() => import('./views/forms/validation/Validation'))
+// Отделы
 
-const Charts = React.lazy(() => import('./views/charts/Charts'))
+const Departments = React.lazy(() => import('./views/pages/departments/index'))
 
-// Icons
-const CoreUIIcons = React.lazy(() => import('./views/icons/coreui-icons/CoreUIIcons'))
-const Flags = React.lazy(() => import('./views/icons/flags/Flags'))
-const Brands = React.lazy(() => import('./views/icons/brands/Brands'))
+// Монако
+const MonacoPage = React.lazy(() => import('./views/pages/departments/monaco/monaco_page'))
+const CreateReportMonaco = React.lazy(() => import('./views/pages/departments/monaco/create_report'))
+const ListOtchetMonaco = React.lazy(() => import('./views/pages/departments/monaco/reports/listOtchet'))
+const DetailListMonaco = React.lazy(() => import('./views/pages/departments/monaco/reports/detailList'))
+const SearchOtchetMonaco = React.lazy(() => import('./views/pages/departments/monaco/reports/searchOtchet'))
+const ListManagerMonaco = React.lazy(() => import('./views/pages/departments/monaco/reports/listMahager'))
+const ReporMonacoDetailtPage = React.lazy(() => import('./views/pages/departments/monaco/reports/detailListManager'))
+const ClientsMonaco = React.lazy(() => import('./views/pages/departments/monaco/clients'))
+const SimCardadminMonaco = React.lazy(() => import('./views/pages/edits/simcard/logistmonaco'))
+const SimCardmanagerMonaco = React.lazy(() => import('./views/pages/edits/simcard/manager_monaco'))
 
-// Notifications
-const Alerts = React.lazy(() => import('./views/notifications/alerts/Alerts'))
-const Badges = React.lazy(() => import('./views/notifications/badges/Badges'))
-const Modals = React.lazy(() => import('./views/notifications/modals/Modals'))
-const Toasts = React.lazy(() => import('./views/notifications/toasts/Toasts'))
+// Туран
+const TuranPage = React.lazy(() => import('./views/pages/departments/turan/turan_page'))
+const ReporTuranDetailtPage = React.lazy(() => import('./views/pages/departments/turan/reports/detailListManager'))
+const CreateReportTuran = React.lazy(() => import('./views/pages/departments/turan/create_report'))
+const ListOtchetTuran = React.lazy(() => import('./views/pages/departments/turan/reports/listOtchet'))
+const SearchOtchetTuran = React.lazy(() => import('./views/pages/departments/turan/reports/searchOtchet'))
+const DetailListTuran = React.lazy(() => import('./views/pages/departments/turan/reports/detailList'))
+const ListManagerTuran = React.lazy(() => import('./views/pages/departments/turan/reports/listMahager'))
+const ClientsTuran = React.lazy(() => import('./views/pages/departments/turan/clients'))
+const SimCardadminTuran = React.lazy(() => import('./views/pages/edits/simcard/logistturan'))
+const SimCardmanagerTuran = React.lazy(() => import('./views/pages/edits/simcard/manager_turan'))
 
-const Widgets = React.lazy(() => import('./views/widgets/Widgets'))
+// Ильяс
+const IlyasPage = React.lazy(() => import('./views/pages/departments/ilyas/ilyas_page'))
+const ReporIlyasDetailtPage = React.lazy(() => import('./views/pages/departments/ilyas/reports/detailListManager'))
+const CreateReportIlyas = React.lazy(() => import('./views/pages/departments/ilyas/create_report'))
+const ListOtchetIlyas = React.lazy(() => import('./views/pages/departments/ilyas/reports/listOtchet'))
+const SearchOtchetIlyas = React.lazy(() => import('./views/pages/departments/ilyas/reports/searchOtchet'))
+const DetailListIlyas = React.lazy(() => import('./views/pages/departments/ilyas/reports/detailList'))
+const ListManagerIlyas = React.lazy(() => import('./views/pages/departments/ilyas/reports/listMahager'))
+const ClientsIlyas = React.lazy(() => import('./views/pages/departments/ilyas/clients'))
+const SimCardadminIlyas = React.lazy(() => import('./views/pages/edits/simcard/logistilyas'))
+const SimCardmanagerIlyas = React.lazy(() => import('./views/pages/edits/simcard/manager_ilyas'))
+
+// IT отдел
+const ITPage = React.lazy(() => import('./views/pages/departments/it/global-page'))
+const ITreportsDetail = React.lazy(() => import('./views/pages/departments/it/components/detail-itog'))
+const ITbuyerPage = React.lazy(() => import('./views/pages/departments/it/pages/buyers/buyers'))
+const PersonalPage = React.lazy(() => import('./views/pages/personal-page/personal-manager'))
+
+// Редакторы
+
+const Accounts = React.lazy(() => import('./views/pages/edits/account/index'))
+const SimCardPage = React.lazy(() => import('./views/pages/edits/simcard/index'))
+const SlotPage = React.lazy(() => import('./views/pages/edits/slots/index'))
+const InstagramSlotEdit = React.lazy(() => import('./views/pages/edits/slots/instagram'))
+const TelegramSlotEdit = React.lazy(() => import('./views/pages/edits/slots/editTG'))
+const ManagerSim = React.lazy(() => import('./views/pages/edits/simcard/simcard_manager'))
+const ItSim = React.lazy(() => import('./views/pages/edits/simcard/simcard_it'))
+const SearchReportsIT = React.lazy(() => import('./views/pages/departments/it/pages/search-itogs/searchItog'))
+const SeacrhClientIT = React.lazy(() => import('./views/pages/departments/it/pages/clients/search-clients'))
+const SMmanagers = React.lazy(() => import('./views/pages/departments/it/pages/smanager/index'))
+const Unauthorized = React.lazy(() => import('./components/un_auth'))
 
 const routes = [
   { path: '/', exact: true, name: 'Home' },
-  { path: '/dashboard', name: 'Dashboard', element: Dashboard },
-  { path: '/theme', name: 'Theme', element: Colors, exact: true },
-  { path: '/theme/colors', name: 'Colors', element: Colors },
-  { path: '/theme/typography', name: 'Typography', element: Typography },
-  { path: '/base', name: 'Base', element: Cards, exact: true },
-  { path: '/base/accordion', name: 'Accordion', element: Accordion },
-  { path: '/base/breadcrumbs', name: 'Breadcrumbs', element: Breadcrumbs },
-  { path: '/base/cards', name: 'Cards', element: Cards },
-  { path: '/base/carousels', name: 'Carousel', element: Carousels },
-  { path: '/base/collapses', name: 'Collapse', element: Collapses },
-  { path: '/base/list-groups', name: 'List Groups', element: ListGroups },
-  { path: '/base/navs', name: 'Navs', element: Navs },
-  { path: '/base/paginations', name: 'Paginations', element: Paginations },
-  { path: '/base/placeholders', name: 'Placeholders', element: Placeholders },
-  { path: '/base/popovers', name: 'Popovers', element: Popovers },
-  { path: '/base/progress', name: 'Progress', element: Progress },
-  { path: '/base/spinners', name: 'Spinners', element: Spinners },
-  { path: '/base/tables', name: 'Tables', element: Tables },
-  { path: '/base/tooltips', name: 'Tooltips', element: Tooltips },
-  { path: '/buttons', name: 'Buttons', element: Buttons, exact: true },
-  { path: '/buttons/buttons', name: 'Buttons', element: Buttons },
-  { path: '/buttons/dropdowns', name: 'Dropdowns', element: Dropdowns },
-  { path: '/buttons/button-groups', name: 'Button Groups', element: ButtonGroups },
-  { path: '/charts', name: 'Charts', element: Charts },
-  { path: '/forms', name: 'Forms', element: FormControl, exact: true },
-  { path: '/forms/form-control', name: 'Form Control', element: FormControl },
-  { path: '/forms/select', name: 'Select', element: Select },
-  { path: '/forms/checks-radios', name: 'Checks & Radios', element: ChecksRadios },
-  { path: '/forms/range', name: 'Range', element: Range },
-  { path: '/forms/input-group', name: 'Input Group', element: InputGroup },
-  { path: '/forms/floating-labels', name: 'Floating Labels', element: FloatingLabels },
-  { path: '/forms/layout', name: 'Layout', element: Layout },
-  { path: '/forms/validation', name: 'Validation', element: Validation },
-  { path: '/icons', exact: true, name: 'Icons', element: CoreUIIcons },
-  { path: '/icons/coreui-icons', name: 'CoreUI Icons', element: CoreUIIcons },
-  { path: '/icons/flags', name: 'Flags', element: Flags },
-  { path: '/icons/brands', name: 'Brands', element: Brands },
-  { path: '/notifications', name: 'Notifications', element: Alerts, exact: true },
-  { path: '/notifications/alerts', name: 'Alerts', element: Alerts },
-  { path: '/notifications/badges', name: 'Badges', element: Badges },
-  { path: '/notifications/modals', name: 'Modals', element: Modals },
-  { path: '/notifications/toasts', name: 'Toasts', element: Toasts },
-  { path: '/widgets', name: 'Widgets', element: Widgets },
+  { path: '/dashboard', name: 'Статистика', element: Dashboard },
+  { path: '/slots/instagram', name: 'Инстаграм слоты', element: InstagramSlot },
+  { path: '/slots/telegram', name: 'Телеграм слоты', element: TelegramSlot },
+  { path: '/departments', name: 'Отделы', element: Departments },
+  { path: '/unauthorized', name: 'Unauthorized', element: Unauthorized },
+
+  { path: '/departments/monaco', name: 'Монако', element: MonacoPage, roles: ['adminfr', 'kairat', 'ВМ КРТ'] },
+  { path: '/reports/monaco', name: 'Монако', element: ListOtchetMonaco, roles: ['adminfr', 'kairat', 'ВМ КРТ'] },
+  { path: '/reports-manager/monaco', name: 'Монако', element: ListManagerMonaco, roles: ['adminfr', 'kairat', 'ВМ КРТ', 'СМ КРТ'] },
+  { path: '/reports/monaco-manager/:id', name: 'Монако', element: ReporMonacoDetailtPage, roles: ['adminfr', 'kairat', 'ВМ КРТ', 'СМ КРТ',] },
+  { path: '/create-report/monaco', name: 'Монако', element: CreateReportMonaco, roles: ['adminfr', 'kairat', 'ВМ КРТ', 'СМ КРТ'] },
+  { path: '/monaco-list-search', name: 'Монако', element: SearchOtchetMonaco, roles: ['adminfr', 'kairat', 'ВМ КРТ'] },
+  { path: '/reports/monaco/:id', name: 'Монако', element: DetailListMonaco, roles: ['adminfr', 'kairat', 'ВМ КРТ'] },
+  { path: '/clients/monaco', name: 'Монако', element: ClientsMonaco, roles: ['adminfr', 'kairat', 'ВМ КРТ'] },
+  { path: '/simcard/monako-admins', name: 'Монако', element: SimCardadminMonaco, roles: ['adminfr'] },
+  { path: '/simcard/monako-managers', name: 'Монако', element: SimCardmanagerMonaco, roles: ['adminfr'] },
+
+  { path: '/departments/turan', name: 'Туран', element: TuranPage, roles: ['adminfr', 'turan', 'ВМ ТРН'] },
+  { path: '/reports/turan', name: 'Туран', element: ListOtchetTuran, roles: ['adminfr', 'turan', 'ВМ ТРН'] },
+  { path: '/reports/turan-manager/:id', name: 'Туран', element: ReporTuranDetailtPage, roles: ['adminfr', 'turan', 'ВМ ТРН', 'СМ ТРН'] },
+  { path: '/reports-manager/turan', name: 'Туран', element: ListManagerTuran, roles: ['adminfr', 'turan', 'ВМ ТРН', 'СМ ТРН'] },
+  { path: '/create-report/turan', name: 'Туран', element: CreateReportTuran, roles: ['adminfr', 'turan', 'ВМ ТРН', 'СМ ТРН'] },
+  { path: '/turan-list-search', name: 'Туран', element: SearchOtchetTuran, roles: ['adminfr', 'turan', 'ВМ ТРН'] },
+  { path: '/reports/turan/:id', name: 'Туран', element: DetailListTuran, roles: ['adminfr', 'turan', 'ВМ ТРН'] },
+  { path: '/clients/turan', name: 'Туран', element: ClientsTuran, roles: ['adminfr', 'turan', 'ВМ ТРН'] },
+  { path: '/simcard/turan-admins', name: 'Туран', element: SimCardadminTuran, roles: ['adminfr', 'turan', 'ВМ ТРН'] },
+  { path: '/simcard/turan-managers', name: 'Туран', element: SimCardmanagerTuran, roles: ['adminfr', 'turan', 'ВМ ТРН'] },
+
+  { path: '/departments/ilyas', name: 'Ильяс', element: IlyasPage, roles: ['adminfr', 'ilyas', 'ВМ ОЛМ'] },
+  { path: '/reports/ilyas', name: 'Ильяс', element: ListOtchetIlyas, roles: ['adminfr', 'ilyas', 'ВМ ОЛМ'] },
+  { path: '/reports/fenix-manager/:id', name: 'Ильяс', element: ReporIlyasDetailtPage, roles: ['adminfr', 'ilyas', 'ВМ ОЛМ', 'СМ ОЛМ'] },
+  { path: '/reports-manager/ilyas', name: 'Ильяс', element: ListManagerIlyas, roles: ['adminfr', 'ilyas', 'ВМ ОЛМ', 'СМ ОЛМ'] },
+  { path: '/create-report/ilyas', name: 'Ильяс', element: CreateReportIlyas, roles: ['adminfr', 'ilyas', 'ВМ ОЛМ', 'СМ ОЛМ'] },
+  { path: '/ilyas-list-search', name: 'Ильяс', element: SearchOtchetIlyas, roles: ['adminfr', 'ilyas', 'ВМ ОЛМ'] },
+  { path: '/reports/ilyas/:id', name: 'Ильяс', element: DetailListIlyas, roles: ['adminfr', 'ilyas', 'ВМ ОЛМ'] },
+  { path: '/clients/ilyas', name: 'Ильяс', element: ClientsIlyas, roles: ['adminfr', 'ilyas', 'ВМ ОЛМ'] },
+  { path: '/simcard/ilyas-admins', name: 'Ильяс', element: SimCardadminIlyas, roles: ['adminfr', 'sim'] },
+  { path: '/simcard/ilyas-managers', name: 'Ильяс', element: SimCardmanagerIlyas, roles: ['adminfr', 'sim'] },
+
+  { path: '/search-itogs', name: "IT", element: SearchReportsIT, roles: ['adminfr', 'it'] },
+  { path: '/it-smanager', name: "IT", element: SMmanagers, roles: ['adminfr', 'it'] },
+  { path: '/departments/it', name: 'IT', element: ITPage, roles: ['adminfr', 'it'] },
+  { path: '/detail-allitog/:id', name: 'IT', element: ITreportsDetail, roles: ['adminfr', 'it'] },
+  { path: 'it-buyers', name: 'IT', element: ITbuyerPage, roles: ['adminfr', 'it'] },
+  { path: '/search-client-otchet', name: 'IT', element: SeacrhClientIT, roles: ['adminfr', 'it'] },
+  { path: '/personal-page', name: 'Личный кабинет', element: PersonalPage },
+
+  { path: '/fulfillment', name: 'Фулфимент', element: FulfilmentPage, roles: ['adminfr'] },
+  { path: '/edit/accounts', name: 'Редакторы аккаунтов', element: Accounts, roles: ['adminfr', 'it', 'sim'] },
+  { path: '/edit/sim-cards', name: 'Редакторы SIM карт', element: SimCardPage, roles: ['adminfr', 'it', 'sim'] },
+  { path: '/edit/slots', name: 'Редакторы слотов', element: SlotPage, roles: ['adminfr', , 'it', 'sim'] },
+  { path: '/instagram-edit', name: 'Редакторы инстаграм слотов', element: InstagramSlotEdit, roles: ['adminfr', , 'it', 'sim'] },
+  { path: '/telegram-edit', name: 'Редакторы телеграм слотов', element: TelegramSlotEdit, roles: ['adminfr', , 'it', 'sim'] },
+  { path: '/simcard/managers', name: 'Мендежеры SIM', element: ManagerSim, roles: ['adminfr', , 'it', 'sim'] },
+  { path: '/simcard', name: 'IT SIM', element: ItSim, roles: ['adminfr', , 'it', 'sim'] },
 ]
 
 export default routes
